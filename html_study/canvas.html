@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Insert title here</title>
+<style type="text/css">
+	canvas{
+		border : 1rem solid #999;
+	}
+</style>
+	<script type="application/javascript">
+	function draw_m(){
+		var m_canvas = document.getElementById("m");
+		var m_cntx = m_canvas.getContext("2d");
+
+		m_cntx.rect(20,20,150,100);
+		m_cntx.stroke();
+		
+		m_cntx.strokeStyle = "rgb(0,0,200)";
+		m_cntx.strokeRect(150,150,100,100);
+		
+		m_cntx.fillStyle = "rgb(200,0,0)";
+		m_cntx.fillRect(100,100,100,100);	
+	}
+	
+	function draw_picture(){
+		var c = document.getElementById("m");
+		var ctx = c.getContext("2d");
+		var img = new Image();
+		img.onload = function(){
+			ctx.drawImage(img, 0, 0);
+		}
+		img.src = "../images/flw.jpg";
+	}
+	
+	function draw_picture_small(){
+		var c = document.getElementById("m");
+		var ctx = c.getContext("2d");
+		var img = new Image();
+		img.onload = function(){
+			ctx.drawImage(img, 0, 0, 100, 100);
+		}
+		img.src = "../images/flw.jpg";
+	}
+	
+	function draw_picture_part(){
+		var c = document.getElementById("m");
+		var ctx = c.getContext("2d");
+		var img = new Image();
+		img.onload = function(){
+			ctx.drawImage(img, 0, 0, 100, 100);
+		}
+		img.src = "../images/flw.jpg";
+	}
+	</script>
+</head>
+<body onload = "draw_picture_small()">
+	<canvas id="m" width="300" height="300"></canvas>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Seminar</title>
+<link href="registerform2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<header>
+		<h1> 2021년 Moble Seminar 신청</h1>
+	</header>
+	<nav></nav>
+	<form>
+	<fieldset>
+		<legend>신청 상세 정보</legend>
+			<li>
+				<label for="seminar">세미나</label>
+				<input id="setobj" type="text" list="object" required autofocus>
+					<datalist id="object">
+						<option value="webApp" label="웹앱프로그래밍">
+						<option value="HTML5" label="HTML5">
+						<option value="android" label="안드로이드 웹 개발">
+					</datalist>
+			</li>
+			<li>
+				<label for="setdate">일정선택</label>
+				<input id="setdate" type="date">
+			</li>
+			<li>
+				<label for="settime">과정선택</label>
+				<input id="settime" type="text" list="semtime">
+				<datalist id="semtime">
+					<option value="주간오전" label="주간오전">
+					<option value="주간오후" label="주간오후">
+					<option value="주간종일" label="주간종일">
+				</datalist>
+			</li>
+	</fieldset>
+	<fieldset>
+		<legend>신청하는 사람</legend>
+			<li>
+				<label for="name">이름</label>
+				<input id=name type="text" placeholder="홍길동" required autofocus>
+			</li>
+			<li>
+				<label for="email">메일주소</label>
+				<input id=email type="email" placeholder="aaa@bbb.com" required autofocus>
+			</li>
+			<li>
+				<label for="phonenumber">전화번호('-' 제외)</label>
+				<input id=phonenumber type="number" placeholder="01011112222" required autofocus>
+			</li>
+			<li>
+				<label for="address">주소</label>
+				<input id=address type="text" height="10px">
+			</li>
+	</fieldset>
+	<fieldset>
+		<li>
+			<label for="order">신청인원</label>
+			<input id="num" type="number" min="1" max="3" value="1">
+	</fieldset>
+	<fieldset>
+		<input type="submit" formmethod="post" action="/buy" value="신청하기">
+		<input type="submit" formmethod="post" action="/back" formnovalidate value="취소하기">
+	</fieldset>
+	</form>
+	<footer></footer>
+</body>
+</html>

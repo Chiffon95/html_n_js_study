@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function sumAll(arguments){
+		alert(typeof(arguments) + ':' + arguments.length);	
+		FunA();
+	}
+	var FunA = function() {
+		var output = prompt('이름을 입력하세요', 'name');
+		alert(output);
+	};
+	
+</script>
+</head>
+<body onload = "sumAll(arguments)">
+
+</body>
+</html>
