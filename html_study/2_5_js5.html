@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function changeType(){
+		var input = document.getElementById('in_date');
+		input.setAttribute('type','date');
+	}
+	
+	function getWH(){
+		var img = document.getElementById('mying');
+		var out = img.getAttribute('width');
+		out += ' X ' + img.getAttribute('height');
+		
+		document.getElementById('output').innerHTML = out;
+	}
+	function setWidth(){
+		var img = document.getElementById('mying');
+		var out = img.getAttribute('width');
+		
+	}
+	function getWidth(){
+		var img = document.getElementById('mying');
+		var out = img.getAttribute('width');
+		
+		document.getElementById('output').innerHTML = out;
+	}
+</script>
+</head>
+<body>
+	입력창 변경하기
+	<button onclick='changeType()'>change</button>
+	
+	<p>날짜를 입력하세요</p>
+	
+	<input id='in_date'>
+	
+	<br>
+	
+	<img id = 'mying' src= '../images/boracay2.jpg'>
+	<p></p>
+<!-- 	<button id = 'set' onclick = 'setWidth()'>set width</button>
+	<input id="in_w" type="text"></input>
+	<button id = 'get' onclick = 'getWidth()'>get width</button>
+	<div id="out_w"></div> -->
+</body>
+</html>

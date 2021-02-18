@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function appendNode(){
+		var btn = document.createElement('button');
+		
+		var text = document.createTextNode('hello javascript!');
+		
+		var text_h1 = document.createElement('h1');
+		text_h1.appendChild(text)
+		btn.appendChild(text);
+		document.body.appendChild(btn);
+	}
+</script>
+</head>
+<body onload = 'appendNode()'>
+</body>
+</html>

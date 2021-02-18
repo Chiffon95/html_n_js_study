@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type = "application/javascript">
+	function Contacts(name, email, phone){
+		this.name = name;
+		this.email = email;
+		this.phone = phone;
+	};
+
+	Contacts.prototype.getName = function(){
+		return this.name;
+	};
+	Contacts.prototype.getEmail = function(){
+		return this.email;
+	};
+	Contacts.prototype.getPhone = function(){
+		return this.phone;
+	};
+	Contacts.prototype.getContact = function(){
+		return this.name + ' - ' + this.email + ' - ' + this.phone;
+	}
+	
+	var addrs=[];
+	addrs.push(new Contacts('michael', 'michael@mail.com','01012341234'));
+	addrs.push(new Contacts('tom', 'tom@mail.com','01056785678'));
+	
+	var out='';
+	for(var i in addrs){
+		out += addrs[i].name + ': ' + addrs[i].getContact();
+		out+='\n';
+	}
+	
+	alert(out);
+</script>
+</head>
+<body>
+
+</body>
+</html>

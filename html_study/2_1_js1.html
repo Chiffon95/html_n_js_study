@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+<script type="application/javascript">
+	var object = {
+		subject: '수학',
+		message: function(grade){
+			alert(this.subject + ': ' + grade + '점');
+		}
+	};
+	
+	var contact = {
+		name: '홍길동',
+		phone: '01012341234',
+		email: 'hong@mail.net',
+		address: 'seoul, korea'	
+	};
+	
+	var output = '';
+	for(var key in contact){
+		output += key + ': ' + contact[key] + '\n';
+	}
+	
+	object.message(95);
+	alert(output);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

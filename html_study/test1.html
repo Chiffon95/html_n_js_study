@@ -2,59 +2,125 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>afdsadsfafdsfds</title>
+<title>page page pppppage</title>
 <style type="text/css">
+	* {
+    	box-sizing: border-box;
+	}
 	body{
-		margin : 0;
+	background-color:black;
 	}
-	.top-menu-right{
-		position: relative;
-		font-size: 24pt;
-		text-align: right;
-		top: 10px;
-	}
-	.main-title{
-		padding-top: 70px;
-		padding-bottom: 20px;
-		font-size: 40pt;
-		text-align: center;
-	}
-	.copyright_fomtsize12pt{
-		font-size: 12pt;
-	}
-	.container{
-		text-align: center;
-		background-color : blue;
+	html,body,header,footer{
+		margin:0;
+		padding:0;
 	}
 	nav{
-		display : flexible;
-		background-color : red;
-		width: 100%;
+		background-color:black;
+		color:white;
+		height:50%;
+		text-align:center;
+	}
+	nav div{
+		hegiht :100%;
+		margin:1%;
+	}
+	header{
 		text-align : center;
-		padding : 1%;
-		font-size: 1rem;
+	}
+	.user-interface{
+		position:relative;
+		background-color :red;
+		overflow : hidden;
+		float : left;
+		width : 25%;
+	}
+	.user-image, .user-info{
+		padding:5%
+		
+	}
+	.container-middle{
+		background-color : green;
+		overflow : hidden;
+		float:left;
+		width : 55%;
+	}
+	.container-middle .container{
+		background-color :white;
+	}
+	.active-option{
+		background-color :blue;
+		overflow : hidden;
+		float : right;
+		width : 20%;
+	}
+	section .main p{
+		text-align: center;
 	}
 	footer{
+		clear:both;
 		background-color : green;
 		width : 100%;
 		text-align : center;
 		padding : 1%;
 		font-size: 1rem;
+	} 
+/* 	
+	.container{
+		text-align: center;
+		background-color : black;
+		color : white;
 	}
+	nav{
+		display : absolute;
+		background-color : red;
+		width: 100%;
+		text-align : center;
+		padding : 1%;
+		font-size: 1rem;
+	}*/
 </style>
 </head>
 <body>
 	
-	<nav>nav</nav>
+	<nav>
+		<div> dsfsdf</div></nav>
 	<header>header</header>
 	<article>
-		<div class = "main-event container">main event</div>
-		<div class = "container">container1</div>
-		<div class = "container">container2</div>
-		<div class = "container">container3</div>
-		<div class = "container">container4</div>
+	<!-- left side -->
+		<div class = "user-interface">
+			<div class = "user-image">
+				<img src="../images/boracay2.jpg" width=100%>
+			</div>
+			<div class = "user-info">
+				<h1>최현학</h1>
+				<p>테스트용 페이지입니다</p>
+			</div>
+		</div>
+		<!-- main side -->
+		<div class = "container-middle">
+			<div class = "container main">
+				<h1>main event</h1>
+				<h2>h2 h2</h2>
+				<p>container main</p>
+			</div>
+			<div class="container">
+				<h1>main event</h1>
+				<h2>h2 h2</h2>
+				<p>container 1</p>
+			</div>
+			<div class="container">
+				<h1>main event</h1>
+				<h2>h2 h2</h2>
+				<p>container 2</p>
+			</div>
+		</div>
+		<!-- right side -->
+		<div class = "active-option">
+			right container
+		</div>
 	</article>
-	<section>section</section>
-	<footer>footer</footer>
+	<section>
+	</section>
+	<footer><p class="copyright_fomtsize1p5rem">footer</footer>
 </body>
 </html>
