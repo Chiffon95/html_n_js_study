@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+	function changeStyleRed(){
+		document.getElementById('id1').style.color = 'red';
+	}
+	function changeStyleGreen(){
+		document.getElementById('id1').style.color = 'green';
+	}
+	function changeStyleBlue(){
+		document.getElementById('id1').style.color = 'blue';
+	}
+	function changeStyleBlack(){
+		document.getElementById('id1').style.color = 'black';
+	}
+	
+	function removeText(){
+		var remove = document.getElementById('id1');
+		document.body.removeChild(remove);
+	}
+	function writeText(){
+		var h1 = document.createElement('h1');
+		
+		var helloworld = document.createTextNode('Hello World!')
+		h1.appednChild(helloworld);
+		document.body.appendChild(h1);
+	}
+	
+	function removeListRed(){
+		var red = document.getElementById('red');
+		red.parentNode.removeChild(red);
+	}
+	function removeListGreen(){
+		var red = document.getElementById('green');
+		red.parentNode.removeChild(red);
+	}
+	function removeListBlue(){
+		var red = document.getElementById('blue');
+		red.parentNode.removeChild(red);
+	}
+</script>
+<body>
+	<h1 id = "id1">Hello World!</h1>
+	<button type = "button" onclick="changeStyleRed()">Red Button</button>
+	<button type = "button" onclick="changeStyleGreen()">Green Button</button>
+	<button type = "button" onclick="changeStyleBlue()">Blue Button</button>
+	<button type = "button" onclick="changeStyleBlack()">Black Button</button>
+	<button type = "button" onclick="removeText()">Remove Button</button>
+	<button type = "button" onclick="writeText()">Write Button</button>
+	
+	<br>
+	
+	<button onclick="removeListRed()">Remove Red</button>
+	<button onclick="removeListGreen()">Remove Green</button>
+	<button onclick="removeListBlue()">Remove Blue</button>
+	<ul id ="color">
+		<li id="red">Red</li>
+		<li id="green">Green</li>
+		<li id="blue">Blue</li>
+	</ul>
+	
+
+</body>
+</html>

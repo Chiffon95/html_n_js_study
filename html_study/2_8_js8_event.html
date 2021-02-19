@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<style type="text/css">
+	.chacha{
+		background-color : #D94A38;
+		width:30%;
+		height: 10%;
+		padding : 50%;
+		font-size : 30px;
+		color: #ffffff;
+	}
+</style>
+<title>Insert title here</title>
+<script type="text/javascript">
+	function changeText(element){
+		element.innerHTML="click event";
+		element.style.backgroundColor = "#00ff00";
+	}
+	
+	function changeBlack(obj){
+		obj.style.backgroundColor = "#0000ff";
+		obj.innerHTML="Release Me";
+	}
+	function changeRed(obj){
+		obj.style.backgroundColor="#D94a38";
+		obj.innerHTML="Redddddddd color";
+	}
+</script>
+</head>
+<body>
+	<div id="chacha" onmouseover="changeBlack(this)" onmouseout = "changeRed(this)" onclick="changeText(this)">
+		hello world
+	</div>
+</body>
+</html>

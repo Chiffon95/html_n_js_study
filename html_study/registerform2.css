@@ -146,3 +146,73 @@ form button:hover {
 	background: #1e2506;
 	cursor: pointer;
 }
+
+* {
+   	box-sizing: border-box;
+}
+html,body,header,footer{
+	margin:0;
+	padding:0;
+}
+nav{
+	display:absolute;
+	position: fixed;
+	background-color:white;
+	min-height:3rem;
+	text-align:center;
+}
+header{
+	margin:1rem;
+	background-color:white;
+	border-radius : 5rem;
+	margin:1rem;
+	text-align : center;
+}
+.container-left{
+	position:relative;
+	background-color :red;
+	overflow : hidden;
+	float : left;
+	width : 25%;
+}
+.user-image{
+	float : left;
+	padding:5%
+			
+}
+.user-info{
+		padding:5%
+
+}
+.container-middle{
+	background-color : green;
+	overflow : hidden;
+	float:left;
+	width : 55%;
+}
+.container-middle .container{
+	background-color :white;
+}
+.active-option{
+	background-color :blue;
+	overflow : hidden;
+	float : right;
+	width : 20%;
+}
+section .main p{
+	text-align: center;
+}
+footer{
+	clear:both;
+	background-color : green;
+	width : 100%;
+	text-align : center;
+	padding : 1%;
+	font-size: 1rem;
+} 
+/*
+.container{
+	text-align: center;
+	background-color : black;
+	color : white;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Color remove</h1>
+	<button onclick="removeColorList()">Remove Button</button>
+	<ul id ="colorList">
+		<li>Red</li>
+		<li>Green</li>
+		<li>Blue</li>
+		<li>Gray</li>
+		<li>Black</li>
+		<li>White</li>
+		<li>Yellow</li>
+		<li>Brown</li>
+		<li>Purple</li>
+	</ul>
+<script>
+	function removeColorList(){
+		var colorListNode = document.getElementById('colorList');
+		
+		colorListNode.removeChild(colorListNode.firstChild);
+ 		colorListNode.removeChild(colorListNode.childNodes[0]);
+	}
+</script>
+</body>
+</html>

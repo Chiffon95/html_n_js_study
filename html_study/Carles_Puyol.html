@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>티켓예매</title>
+<meta charset="EUC-KR">
+<style type="text/css">
+	body{
+		background-color:rgb(235, 231, 139);
+	}
+   li{
+      text-align :left;
+   }
+   	 h1, h2, div,h3, figure{
+   		text-align : center;
+  	 }
+  	  	div{
+   		text-align : right;
+  	 }
+</style>
+</head>
+
+<body>
+	
+	<header>
+	<div style="position: fixed; float:right; width: 20%; height: 10rem">
+		<button href="#footer">top</button>
+	</div>
+	<h1>Liga de Fútbol Profesional, LFP</h1>
+	</header>
+	
+<form>
+<fieldset>
+	<legend>La Liga Santander</legend>
+
+	<li>
+	<label for="soccer">라운드/팀명</label>
+	<input id="setobj" type="text"list="object" size=47 maxlength=100>
+	<datalist id="object">
+		<option value="32R바르셀로나(home)VS오사수나(away)" label="2021.01.01">
+		<option value="33R바르셀로나(home)VS오사수나(away)" label="2021.01.17">
+		<option value="34R레알마드리드(home)VS바르셀로나(away)" label="2021.01.28">
+		<option value="35R발렌시아(home)VS레반테(away)" label="코로나 취소">
+		<option value="36R헤타페(home)VS비야레알(away)" label="2021.05.16">
+		<option value="37R레알베티스(home)VS바르셀로나(away)" label="2021.05.24">
+		<option value="38R아틀레틱마드리드(home)VS레알마드리드(away)" label="2021.06.15">
+		
+	<li>
+	<label for="setdate">일정선택</label>
+	<input id="setdate" type="date">
+	</li>
+
+	<li>
+	<label for="srttime">좌석선택</label>
+	<input id="settime"type="taxt" list="semtime" size=15 maxlength=20>
+	<datalist id="semtime">
+	<option value="VIP" label="VIP">
+	<option value="usually" label="usually">
+	<option value="outline" label="outline">
+	</datalist>
+	</li>
+</datalist>
+	</li>
+</fieldset>
+
+<fieldset>
+	<legend>Reservation</legend>
+
+	<li>
+	<label for="name"> 이름</label>
+	<input id=name type="text" placeholder="messi" required autofocus size=25 maxlength=100>
+	</li>
+
+	<li>
+	<label for="adress"> 주소</label>
+	<input id="adress"type="text" required autofocus size=25 maxlength=100>
+	</li>
+
+	<li>
+	<label for="email"> 메일주소</label>
+	<input id="email"type="text" placeholder="ghdrlfehd@naver.com" required autofocus>
+	</li>
+
+	<li>
+	<label for="phone"> 전화번호</label>
+	<input id="number"type="text" placeholder="000-0000-0000" required autofocus>
+	</li>
+
+</fieldset>
+
+<fieldset>
+	<li>
+	<label for="order">예약인원</label>
+	<input id="num" type="number" min="1" max="3" value="1">
+	</li>
+</fieldset>
+
+<fieldset>
+	<input type="submit" formmethod="post" action="/buy" value="신청하기">
+	<input type="submit" formmethod="post" action="/back" formnovalidate="취소하기">
+</fieldset>
+	
+<fieldset>
+	<h1>FIFA</h1>
+	<h2>명예의 전당</h2>
+
+	<legend>player</legend>
+	
+	<figure>
+		<img src="image/푸욜.PNG">
+		<figcaption><h3>Name: Carles Puyol i Saforcada</h3> </figcaption>
+		<figcaption> <h3>Team: Futbol Club Barcelona</h3>  </figcaption><br>
+	</figure>
+
+<div style="width:200px; height:150px; border:1px solid rgb(235, 231, 139); float: left;">
+	<be> <h4>*푸욜 스페셜</h4>
+	<A href="https://www.youtube.com/watch?v=Ab-094-9Hx8"> 동영상 시청 </A>
+	</div>
+	<div style="width:200px; height:150px; border:1px solid rgb(235, 231, 139); float: right;">
+	<div class="search">
+ 	<h4>player search</h4>
+	<input type="text" placeholder="검색어를 입력해주세요."><div class="button"><br>
+ 	<button>검색</button>
+</div>
+	  		
+	
+	</fieldset>
+	
+	<fieldset>
+	<legend>award</legend>
+		<h3>수상내역</h3>
+	<li>
+	<label for="soccer">스페인바르셀로나</label><br>
+	<input id="setsbj" type="text"list="subject"size=90 maxlength=100>
+	<datalist id="subject">
+		<option value="프리메라리가 : 우승 (2004-05, 2005-06, 2008-09, 2009-10, 2010-11, 2012-13)" label="프리메라리가 : 우승 (2004-05, 2005-06, 2008-09, 2009-10, 2010-11, 2012-13)">
+		<option value="코파 델 레이 : 우승 (2008-09, 2011-12), 준우승 (2010-11, 2013-14)" label="코파 델 레이 : 우승 (2008-09, 2011-12), 준우승 (2010-11, 2013-14)">
+		<option value="수페르코파 데 에스파냐 : 우승 (2005, 2006, 2009, 2010, 2011, 2013), 준우승 (2012)" label="수페르코파 데 에스파냐 : 우승 (2005, 2006, 2009, 2010, 2011, 2013), 준우승 (2012)">
+		<option value="UEFA 챔피언스리그 : 우승 (2005-06, 2008-09, 2010-11), 4강 (2007-08, 2009-10, 2011-12, 2012-13)" label="UEFA 챔피언스리그 : 우승 (2005-06, 2008-09, 2010-11), 4강 (2007-08, 2009-10, 2011-12, 2012-13)">
+		<option value="UEFA 슈퍼컵 : 우승 (2009, 2011), 준우승 (2006)" label="UEFA 슈퍼컵 : 우승 (2009, 2011), 준우승 (2006)">
+		<option value="FIFA 클럽 월드컵 : 우승 (2009, 2011), 준우승 (2006)" label="FIFA 클럽 월드컵 : 우승 (2009, 2011), 준우승 (2006)">
+	</li>
+		
+	<li>
+	<label for="soccer">스페인국가대표</label><br>
+	<input id="te" type="text"list="team"size=90 maxlength=100>
+	<datalist id="team">
+		<option value="올림픽 축구 : 은메달 (2000)" label="올림픽 축구 : 은메달 (2000)">
+		<option value="UEFA 유럽 축구 선수권 대회 : 우승 (2008)" label="UEFA 유럽 축구 선수권 대회 : 우승 (2008))">
+		<option value="FIFA 컨페더레이션스컵 : 3위 (2009)" label="FIFA 컨페더레이션스컵 : 3위 (2009)">
+		<option value="FIFA 월드컵 : 우승 (2010)" label="FIFA 월드컵 : 우승 (2010)">
+		<option value="UEFA 슈퍼컵 : 우승 (2009, 2011), 준우승 (2006)" label="UEFA 슈퍼컵 : 우승 (2009, 2011), 준우승 (2006)">
+	</li>
+	
+	<li>
+	<label for="soccer">개인  수상</label><br>
+	<input id="al" type="text"list="alone"size=90 maxlength=100>
+	<datalist id="alone">
+		<option value="UEFA 클럽 풋볼 어워드 : 최우수 수비수상 (2005-06)" label="UEFA 클럽 풋볼 어워드 : 최우수 수비수상 (2005-06)">
+		<option value="UEFA 올해의 팀 : 2002, 2005, 2006, 2008, 2009, 2010" label="UEFA 올해의 팀 : 2002, 2005, 2006, 2008, 2009, 2010">
+		<option value="FIFA/FIFPro 월드 베스트 XI : 2007, 2008, 2010" label="FIFA/FIFPro 월드 베스트 XI : 2007, 2008, 2010">
+		<option value="UEFA 유럽 축구 선수권 대회 올스타 팀 : 2008" label="UEFA 유럽 축구 선수권 대회 올스타 팀 : 2008">
+		<option value="FIFA 컨페더레이션스컵 베스트 11 : 2009" label="FIFA 컨페더레이션스컵 베스트 11 : 2009">
+		<option value="FIFA 월드컵 올스타 팀 : 2010" label="FIFA 월드컵 올스타 팀 : 2010">
+	</li>
+
+	</fieldset>
+	
+	<footer>
+	<p>작성일자: <time datetime="2021-02-18"pubdate>
+							2021년 2월 18일</time></p>	
+	</footer>
+</body>
+</html>

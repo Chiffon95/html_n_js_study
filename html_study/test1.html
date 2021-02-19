@@ -3,90 +3,30 @@
 <head>
 <meta charset="EUC-KR">
 <title>page page pppppage</title>
+<link rel="stylesheet" href="test1.css" />
 <style type="text/css">
-	* {
-    	box-sizing: border-box;
-	}
-	body{
-	background-color:black;
-	}
-	html,body,header,footer{
-		margin:0;
-		padding:0;
-	}
-	nav{
-		background-color:black;
-		color:white;
-		height:50%;
-		text-align:center;
-	}
-	nav div{
-		hegiht :100%;
-		margin:1%;
-	}
-	header{
-		text-align : center;
-	}
-	.user-interface{
-		position:relative;
-		background-color :red;
-		overflow : hidden;
-		float : left;
-		width : 25%;
-	}
-	.user-image, .user-info{
-		padding:5%
-		
-	}
-	.container-middle{
-		background-color : green;
-		overflow : hidden;
-		float:left;
-		width : 55%;
-	}
-	.container-middle .container{
-		background-color :white;
-	}
-	.active-option{
-		background-color :blue;
-		overflow : hidden;
-		float : right;
-		width : 20%;
-	}
-	section .main p{
-		text-align: center;
-	}
-	footer{
-		clear:both;
-		background-color : green;
-		width : 100%;
-		text-align : center;
-		padding : 1%;
-		font-size: 1rem;
-	} 
-/* 	
-	.container{
-		text-align: center;
-		background-color : black;
-		color : white;
-	}
-	nav{
-		display : absolute;
-		background-color : red;
-		width: 100%;
-		text-align : center;
-		padding : 1%;
-		font-size: 1rem;
-	}*/
 </style>
+<script type="text/javascript">
+	
+</script>
 </head>
 <body>
-	
 	<nav>
-		<div> dsfsdf</div></nav>
-	<header>header</header>
+		<div class="container">
+			<div class = "nav-menu nav-menu-image" >
+				<img style="max-height:2rem" src="https://byline.network/wp-content/uploads/2018/05/cat.png">
+			</div>
+			<ul class = "nav-menu-in">
+				<li >a</li>
+				<li >b</li>
+				<li >c</li>
+				<li >d</li>
+			</ul>
+		</div>
+	</nav>
 	<article>
 	<!-- left side -->
+	<div class = "container-left">
 		<div class = "user-interface">
 			<div class = "user-image">
 				<img src="../images/boracay2.jpg" width=100%>
@@ -96,6 +36,7 @@
 				<p>테스트용 페이지입니다</p>
 			</div>
 		</div>
+	</div>
 		<!-- main side -->
 		<div class = "container-middle">
 			<div class = "container main">
@@ -104,12 +45,17 @@
 				<p>container main</p>
 			</div>
 			<div class="container">
-				<h1>main event</h1>
+				<h1>sub1</h1>
 				<h2>h2 h2</h2>
 				<p>container 1</p>
 			</div>
 			<div class="container">
-				<h1>main event</h1>
+				<h1>sub2</h1>
+				<h2>h2 h2</h2>
+				<p>container 2</p>
+			</div>
+			<div class="container">
+				<h1>sub3</h1>
 				<h2>h2 h2</h2>
 				<p>container 2</p>
 			</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function timetime(){
+		var today = new Date();
+		var year = date.getFullYear();
+		var month = date.getMonth();
+	}
+	
+	function startTime(){
+		var date = new Date();
+		
+		document.getElementById('date').innerHTML=date.toLocaleDateString();
+		document.getElementById('clock').innerHTML=date.toLocaleTimeString();
+		setTimeout(function(){startTime()},500);
+		}
+</script>
+</head>
+<body onload='startTime()'>
+	<h1 id="date"></h1>
+	<h1 id="clock"></h1>
+</body>
+</html>
