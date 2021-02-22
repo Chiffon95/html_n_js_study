@@ -7,66 +7,85 @@
 <style type="text/css">
 </style>
 <script type="text/javascript">
-	
+   function startTime(){
+      var date = new Date();
+      
+      document.getElementById('date').innerHTML=date.toLocaleDateString();
+      document.getElementById('clock').innerHTML=date.toLocaleTimeString();
+      setTimeout(function(){startTime()},500);
+      }
 </script>
 </head>
-<body>
-	<nav>
-		<div class="container">
-			<div class = "nav-menu nav-menu-image" >
-				<img style="max-height:2rem" src="https://byline.network/wp-content/uploads/2018/05/cat.png">
-			</div>
-			<ul class = "nav-menu-in">
-				<li >a</li>
-				<li >b</li>
-				<li >c</li>
-				<li >d</li>
-			</ul>
-		</div>
-	</nav>
-	<article>
-	<!-- left side -->
-	<div class = "container-left">
-		<div class = "user-interface">
-			<div class = "user-image">
-				<img src="../images/boracay2.jpg" width=100%>
-			</div>
-			<div class = "user-info">
-				<h1>최현학</h1>
-				<p>테스트용 페이지입니다</p>
-			</div>
-		</div>
-	</div>
-		<!-- main side -->
-		<div class = "container-middle">
-			<div class = "container main">
-				<h1>main event</h1>
-				<h2>h2 h2</h2>
-				<p>container main</p>
-			</div>
-			<div class="container">
-				<h1>sub1</h1>
-				<h2>h2 h2</h2>
-				<p>container 1</p>
-			</div>
-			<div class="container">
-				<h1>sub2</h1>
-				<h2>h2 h2</h2>
-				<p>container 2</p>
-			</div>
-			<div class="container">
-				<h1>sub3</h1>
-				<h2>h2 h2</h2>
-				<p>container 2</p>
-			</div>
-		</div>
-		<!-- right side -->
-		<div class = "active-option">
-			right container
-		</div>
-	</article>
-	<section>
-	</section>
-	<footer><p class="copyright_fomtsize1p5rem">footer</footer>
+<body onload='startTime()'>
+<!-- nav start -->
+   <nav>
+      <div class="container">
+         <div class = "nav-menu nav-menu-img" >
+            <img style="max-height:3rem" src="../img/a.jpg">
+         </div>
+         <div class = "nav-menu-in">
+            <ul class = "ul-nocnt">
+               <li class="list-left">a</li>
+               <li class="list-left">b</li>
+               <li class="list-left">c</li>
+               <li class="list-left">d</li>
+            </ul>
+         </div>
+         <div class = "nav-menu-time">
+            <ul class = "ul-nocnt">
+               <li id="date" class="list-time"></li>
+               <li id="clock" class="list-time"></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+<!-- nav end -->
+   <article>
+   <!-- left side -->
+   <div class = "container-left">
+      <div class = "user-interface">
+         <div class = "user-image">
+            <img src="../img/boracay2.jpg" width=100%>
+         </div>
+         <div class = "user-info">
+            <h1>최현학</h1>
+            <p>테스트용 페이지입니다</p>
+         </div>
+      </div>
+   </div>
+   <!-- main side -->
+   <div class = "container-middle">
+      <div class = "container main">
+         <h1>main event</h1>
+         <h2>h2 h2</h2>
+         <p>container main</p>
+      </div>
+      <div class="container">
+         <h1>sub1</h1>
+         <h2>h2 h2</h2>
+         <p>container 1</p>
+      </div>
+      <div class="container">
+         <h1>sub2</h1>
+         <h2>h2 h2</h2>
+         <p>container 2</p>
+      </div>
+      <div class="container">
+         <h1>sub3</h1>
+         <h2>h2 h2</h2>
+         <p>container 2</p>
+      </div>
+   </div>
+   <!-- right side -->
+   <div class = "container-right">
+      right container
+   </div>
+   </article>
+   <!-- article end -->
+   <section>
+   </section>
+   <footer>
+   <hr>
+      <p class="copyright_fomtsize1p5rem">footer</footer>
 </body>
 </html>

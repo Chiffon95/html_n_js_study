@@ -1,42 +1,89 @@
 @charset "EUC-KR";
 
 * {
-   	box-sizing: border-box;
+      box-sizing: border-box;
+}
+body{   
+   background: #aeb0f4;
+      min-width: 20rem;
 }
 html,body,header,footer{
-	min-width: 320px;
-	margin:0;
-	padding:0;
+   min-width: 320px;
+   margin:0;
+   padding:0;
 }
-ul, li{
-	margin: 0;
-	padding: 0;
-	list-style:none;
+.list-left {
+   float: left;
+   border: 0;
+   padding: 0 5% 0 5%;
+}
+.list-time{
+   float: left;
+   border: 0;
+   padding: 0 0.5rem 0 0.5rem;
 }
 nav{
-	position: fixed;
-	background-color: black;
-	color : white;
-	min-height:3rem;
-	text-align:center;
-	left: 0;
-	right: 0;
-	padding: 0.5rem 1rem 0.5rem 1rem;
+   position: fixed;
+   background-color: black;
+   color : white;
+   min-height:3rem;
+   max-height: 5rem;
+   text-align:center;
+   left: 0;
+   right: 0;
+   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 .nav-menu{
-	padding: 0;
-	margin: 0;
-	float: left;
-	max-height: 3rem;
+   padding: 0;
+   margin: 0;
+   float: left;
+   max-height: 3rem;
+}
+.nav-menu-img{
+   position: flexible;
 }
 .nav-menu-in{
-	float: right;
+   float: center;
 }
-.container li{
-	padding: 0 1rem 0 1rem;
-	float: left;
+.nav-menu-time{
+   float: right;
 }
-header{
-	padding: 5rem 1rem 1rem 1rem;
-	text-align: center;
+.ul-nocnt{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-align: center;
+}
+.container-left{
+   background-clip: content-box;
+   background-color: white;
+   border-radius: 1rem;
+   margin-top: 8rem;
+   padding: 2rem;
+   float: left;
+   width: 25%;
+}
+.user-image{
+   padding: 1   rem;
+}
+.container-middle{
+   background-clip: content-box;
+   background-color: white;
+   border-radius: 1rem;
+   margin-top: 8rem;
+   margin-bottom: 5%;
+   float: left;
+   width: 60%;
+}
+.container-right{
+   background-clip: content-box;
+   background-color: white;
+   border-radius: 1rem;
+   margin-top: 8rem;
+   padding: 2rem;
+   float: right;
+   width: 15%;
+}
+footer{
+   clear: both;
 }
